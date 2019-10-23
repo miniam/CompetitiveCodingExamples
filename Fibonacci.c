@@ -1,14 +1,15 @@
 #include<stdio.h>
-int fab(int);
+
+int Fib(int);
 int main()
 { int num,op;
     printf("Enter the number\n");
     scanf("%d",&num);
-   op=fab(num);
+   op=Fib(num);
    printf("%d\n",op);
    return 0;
 }
-int fab(int num)
+int Fib(int num)
 {
     int i;
     if(num==0)
@@ -18,5 +19,5 @@ int fab(int num)
     if(num==2)
         return 2;
     else
-        return (fab(num-1)+fab(num-2));
+        return (Fib(num-1)+Fib(num-2));
 }
